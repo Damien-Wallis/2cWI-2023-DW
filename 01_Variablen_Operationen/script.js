@@ -40,3 +40,5 @@ console.log("a + b + c * 3 = " + result);
 
 result = (a + b + c) / 4;
 console.log("(a + b + c) / 4 = " + result);
+
+console.log("😎");
