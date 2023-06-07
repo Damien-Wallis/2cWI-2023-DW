@@ -18,39 +18,39 @@ const readLineAsync = () => {
 let running = true;
 let kontostand = 0;
 
-console.log("Selektieren Sie die gewünschte Funktion:")
+console.log("bitte Funktion auswählen:")
 console.log("1. Einzahlen")
 console.log("2. Abheben")
 console.log("3. Kontostand")
-console.log("4. Ende")
+console.log("4. Beenden")
 
 while (running) {
     let action = await readLineAsync();
 
 //Einzahlen
     if (action === "1") {
-        console.log("Geben Sie den Betrag ein den Sie einzahlen möchten:")
+        console.log("zu einzahlender Betrag:")
         let einzahlen = await readLineAsync();
         kontostand += einzahlen;
-        console.log("Sie haben " + einzahlen + " Euro eingezahlt!")
+        console.log("Sie haben " + einzahlen + " € eingezahlt!")
     }
 
 //Abheben
     if (action === "2") {
-        console.log("Wie viel würden Sie gerne abheben?")
+        console.log("zu abhebender Betrag:")
         let abheben = await readLineAsync();
         kontostand -= abheben;
-        console.log("Sie haben " + abheben + " Euro abgehoben.")
+        console.log("Sie haben " + abheben + " € abgehoben.")
     }
 
 //Kontostand
     if (action === "3") {
-        console.log("Der Kontostand beträgt: " + kontostand)
+        console.log("Kontostand: " + kontostand)
     }
 
 //Stopp
     if (action === "4") {
-        console.log("Maschine stoppt!")
+        console.log("Maschine stopp!")
         running = false;
     }
 }
