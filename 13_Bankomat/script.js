@@ -50,7 +50,7 @@ while (running) {
 
 //Stopp
     if (action === "4") {
-        console.log("Maschine stopp!")
+        console.log("Maschine stoppen!")
         running = false;
     }
 }
