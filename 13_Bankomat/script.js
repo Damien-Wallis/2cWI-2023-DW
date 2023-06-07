@@ -27,6 +27,7 @@ console.log("4. Ende")
 while (running) {
     let action = await readLineAsync();
 
+//Einzahlen
     if (action === "1") {
         console.log("Geben Sie den Betrag ein den Sie einzahlen möchten:")
         let einzahlen = await readLineAsync();
@@ -34,6 +35,7 @@ while (running) {
         console.log("Sie haben " + einzahlen + " Euro eingezahlt!")
     }
 
+//Abheben
     if (action === "2") {
         console.log("Wie viel würden Sie gerne abheben?")
         let abheben = await readLineAsync();
@@ -41,10 +43,12 @@ while (running) {
         console.log("Sie haben " + abheben + " Euro abgehoben.")
     }
 
+//Kontostand
     if (action === "3") {
         console.log("Der Kontostand beträgt: " + kontostand)
     }
 
+//Stopp
     if (action === "4") {
         console.log("Maschine stoppt!")
         running = false;
