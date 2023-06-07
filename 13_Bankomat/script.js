@@ -16,7 +16,7 @@ const readLineAsync = () => {
 
 
 let running = true;
-let kontostand = 0;
+let kontostand = 42;
 
 console.log("bitte Funktion auswählen:")
 console.log("1. Einzahlen")
@@ -45,7 +45,7 @@ while (running) {
 
 //Kontostand
     if (action === "3") {
-        console.log("Kontostand: " + kontostand)
+        console.log("Kontostand: " + kontostand + "€")
     }
 
 //Stopp
